@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	experimental: { optimizeCss: true, webVitalsAttribution: ['CLS', 'LCP'] },
-	output: 'standalone',
+	// output: 'standalone',
 	webpack(config, { dev, isServer }) {
 		// Code splitting
 		config.optimization.splitChunks.cacheGroups = {
